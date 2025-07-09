@@ -1,144 +1,84 @@
-# HTML
+# NLW Agents
 
-- HyperText
-  - Textos puros, livros, revista, jornais.
-  - Links: Acessas outros documentos
-  - Imagens, Vídeos, Áudios
-- Markup
-  - Marcação
-  - Tag's: <a>Neste Link</a>
-  - Atributos: <a href="https://rocketseat.com.br">Neste Link</a>
-  - Globais: id, class, ...
-- Language
-  - Linguagem
-  - Sintaxe: Maneira de escrever
+## Descrição
 
----
+NLW Agents é um projeto que visa fornecer builds do meta, dicas de estratégia, posicionamento e itens para jogos populares como League of Legends (LOL), Teamfight Tactics (TFT) e Valorant. O objetivo é auxiliar jogadores a aprimorar suas habilidades e tomarem decisões mais informadas durante o jogo.
 
-# HTTP
+## Funcionalidades Principais
 
-- HyperText
-- Transfer
-  - Transferência
-- Protocol
-  - Protocolo
-  - Conjunto de Regras
+*   **Geração de Builds do Meta:** Acesso às builds mais recentes e eficazes para diversos campeões e agentes.
+*   **Dicas de Estratégia:** Orientações sobre as melhores estratégias a serem adotadas em diferentes situações de jogo.
+*   **Posicionamento:** Sugestões de posicionamento para maximizar o desempenho em combate.
+*   **Itens:** Recomendações de itens ideais para cada personagem, otimizando o seu potencial.
 
----
+## Como Usar
 
-# URL
+O projeto está disponível no seguinte repositório GitHub: [https://github.com/schandon/nlw\_agents](https://github.com/schandon/nlw_agents)
 
-- Uniform
-  - uniforme
-- Resource
-  - Recurso
-- Locator
-  - Localizador
-    Encontrar um recurso (html, css, js, pdf. png, jgp, mp4, mp3, ...)
+## Requisitos
 
----
+*   JavaScript
+*   HTML
+*   CSS
+*   Conhecimento de Engenharia de Prompt para IA
 
-# IP
+## Instalação
 
-- Internet
-  - Rede mundial de computadores
-- Protocol
-  - Conjunto de Regras
-    Endereço do computador
-    rocketseat.com.br (domínio)
-    123.32.4.24 (ip)
+1.  Clone o repositório:
 
----
+    ```bash
+    git clone https://github.com/schandon/nlw_agents.git
+    ```
 
-# DNS
+2.  Navegue até o diretório do projeto:
 
-- Domain
-  - Domínio
-- Name
-  - Nome
-- Server
-  - Servidor
+    ```bash
+    cd nlw_agents
+    ```
 
----
+3.  Instale as dependências:
 
-# CSS
+    ```bash
+    npm install
+    ```
 
-- Cascading
-  - Cascata
-  - Regras de Escrita
-  - Hierarquia
-  - Especificidade
-- Style
-  - Estilo
-- Sheet
-  - Folhas
+4. Gere a chave do API no Gemini, é necessário ter uma conta google, entre no Link [Console Google](https://cloud.google.com/apis?utm_source=google&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-SKWS-all-all-trial-p-dr-1710136-LUAC0015755&utm_content=text-ad-none-any-DEV_c-CRE_534667502760-ADGP_Hybrid+%7C+SKWS+-+PHR+%7C+Txt_API+Management-General-KWID_43700065166693636-kwd-152051905&utm_term=KW_api-ST_API&gclsrc=aw.ds&gad_source=1&gad_campaignid=13965755271&gclid=CjwKCAjwprjDBhBTEiwA1m1d0uqND3rzNoCxfpaT4Cx8HHgA3muyPxnkAl1Cf3laai0YRPdUVLuNrRoC1-0QAvD_BwE&authuser=1)
+5. Procure pela opção de `Console`, crie um novo projeto, de um nome para esse projeto.
+6. Acesse o link a seguir do [Gemini Docs](https://aistudio.google.com/apikey?_gl=1*cn37qf*_ga*MTU1NzEwMjgyMS4xNzUyMTAxNDc5*_ga_P1DBVKWT6V*czE3NTIxMDE0NzgkbzEkZzAkdDE3NTIxMDE0NzgkajYwJGwwJGg2MzQ3NDIyOTk.), clique na opção de `Criar uma cahve de API em um novo projeto` e guarde essa informação da Chave.
+   
+7.  Para facilitar a utilização, recomenda-se instalar a extensão "Live Server" no Visual Studio Code ou você pode usar o código a seguir:
+    ````bash
+    start index.html
+    ````
 
-De um arquivo que terá na sua sintaxe, declarações, propriedades e valores. A partir disso, o HTML é impactado visualmente.
+## Utilização
+1. Para a utilização da aplicação, você precisa fornecer a 
+   1. Chave da API
+   2. Selecionar o jogo que o usuário quer as informações
+   3. Fazer a pergunta de fato que o usuário deseja saber
+   4. Clicando em Buscar e esperar `Buscar`
 
-- declaração
-- seletor
-- propriedade e valor
 
-# JS
+## Contribuição
 
-- Linguagem de programação
-- Browsers
-- Input -> Process -> Output
-- Variáveis
-- Function
-  - Agrupamento e reuso de código
-  - Sequencia lógica
-  - Saída
-- Gemini (IA): esperar uma resposta
-- Mexer no meu navegador
-- Estrutura de dados
-- Estrutura de decisão
-- Algoritmo: sequencia de passos lógica, de maneira ordenada, a fim de chegar a alguma conclusão (limitada)
-- Lógica (Pensamento computacional)
-  - Abstração
-  - Decomposição
-  - Algoritmo
-  - Reconhecimento de padrão
-- Tipos de dados
-  - Number (números)
-  - String (textos) (" ", ' ', ` `)
-  - Boolean: true | false
-  - Objects
-  - ...
+Contribuições são bem-vindas! Se você deseja contribuir para o projeto, siga estas etapas:
 
-# DOM
+1.  Faça um fork do repositório.
+2.  Crie uma branch com a sua feature:
 
-- Document
-- Object
-- Model
+    ```bash
+    git checkout -b feature/sua-feature
+    ```
 
-# API
+3.  Faça commit das suas alterações:
 
-- Application
-- Programming
-- Interface
-- JSON: JavaScript Object Notation
+    ```bash
+    git commit -m 'Adiciona uma nova feature'
+    ```
 
-# CDN
+4.  Faça push para a sua branch:
 
-- Content
-- Delivery
-- Network
+    ```bash
+    git push origin feature/sua-feature
+    ```
 
-# LLM
-
-- Large
-- Language
-- Model
-- Gemini, OpenAI (chatGPT), Anthropic (Claude) ...
-
-# Agentes AI
-
-- Tools (ferramentas): permitem uso de código, ou apps, ou qualquer informação extra.
-- Melhor contexto
-
-# Engenharia de prompt
-
-- One shot: uma única pergunta sem muito contexto
-- Few shot: é apresentado exemplos do que se espera
-- Chain of Thought: Cadeia de pensamento para a IA responder gradativamente conforme a instrução.
