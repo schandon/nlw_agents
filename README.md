@@ -82,28 +82,63 @@ De um arquivo que terá na sua sintaxe, declarações, propriedades e valores. A
 # JS
 
 - Linguagem de programação
-- Browser
-- Input -> process -> Output
+- Browsers
+- Input -> Process -> Output
 - Variáveis
 - Function
   - Agrupamento e reuso de código
-  - Sequência lógica
+  - Sequencia lógica
   - Saída
 - Gemini (IA): esperar uma resposta
 - Mexer no meu navegador
 - Estrutura de dados
 - Estrutura de decisão
-- Algoritmo: sequência de passos lógica, de maneira ordenada, a fim de chegar em alguma conclusão (Limitada)
+- Algoritmo: sequencia de passos lógica, de maneira ordenada, a fim de chegar a alguma conclusão (limitada)
 - Lógica (Pensamento computacional)
   - Abstração
   - Decomposição
   - Algoritmo
   - Reconhecimento de padrão
-- Tipos de Dados
-  - Number
-  - String
-  - Boolean
+- Tipos de dados
+  - Number (números)
+  - String (textos) (" ", ' ', ` `)
+  - Boolean: true | false
   - Objects
-  - Flaot
+  - ...
+
+# DOM
+
+- Document
+- Object
+- Model
 
 # API
+
+- Application
+- Programming
+- Interface
+- JSON: JavaScript Object Notation
+
+# CDN
+
+- Content
+- Delivery
+- Network
+
+# LLM
+
+- Large
+- Language
+- Model
+- Gemini, OpenAI (chatGPT), Anthropic (Claude) ...
+
+# Agentes AI
+
+- Tools (ferramentas): permitem uso de código, ou apps, ou qualquer informação extra.
+- Melhor contexto
+
+# Engenharia de prompt
+
+- One shot: uma única pergunta sem muito contexto
+- Few shot: é apresentado exemplos do que se espera
+- Chain of Thought: Cadeia de pensamento para a IA responder gradativamente conforme a instrução.

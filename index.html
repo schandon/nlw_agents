@@ -20,53 +20,61 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>NLW Esports</title>
+    <title>NLW Agents</title>
     <link
       rel="stylesheet"
       href="./style.css"
     />
-    <style></style>
   </head>
+
   <body>
     <header>
       <img
         src="./assets/logo.png"
-        alt="Logo esports NLW"
+        alt="Logo sports NLW"
       />
     </header>
 
     <main>
       <section>
         <div>
-          <h2>Assistencias de Meta</h2>
-          <p>Pergunte sobre estratégias, builds e dicas para seus jogos!</p>
+          <h2 class="title">Assistente de Meta</h2>
+          <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+
           <form id="form">
             <input
+              id="apiKey"
               type="password"
-              placeholder="Informe a API Key do Gemini"
+              placeholder="Informe a API KEY do Gemini"
               required
             />
+
             <select id="gameSelect">
-              <option value="">Selecione o Jogo</option>
+              <option value="">Selecione um jogo</option>
               <option value="valorant">Valorant</option>
               <option value="lol">League of Legends</option>
-              <option value="cs">CS:GO</option>
+              <option value="tft">Teamfights Tatics</option>
             </select>
 
-            <input
+            <textarea
               id="questionInput"
               type="text"
-              placeholder="Ex: Melhor Build para ADC no prata"
-            />
+              placeholder="Ex: Melhor build para ADC..."
+              required
+            ></textarea>
             <button id="askButton">Perguntar</button>
           </form>
 
-          <div id="aiResponse">
+          <div
+            id="aiResponse"
+            class="hidden"
+          >
             <div class="response-content"></div>
           </div>
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

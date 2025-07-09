@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-image: url('./assets/bg.jpg');
   background-repeat: no-repeat;
@@ -19,7 +20,7 @@ body *,
 }
 
 header {
-  padding-top: 32px;
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -43,6 +44,7 @@ section {
   border-radius: 0.625rem;
   padding-top: 4px;
 }
+
 section > div {
   padding: 2rem;
   padding-top: 1.5rem;
@@ -58,7 +60,7 @@ section p {
   letter-spacing: -0.18px;
   color: #a1a1aa;
 }
-/* Animações */
+
 main section {
   opacity: 0;
   transform: translateY(2rem);
@@ -83,7 +85,8 @@ form {
 }
 
 input,
-select {
+select,
+textarea {
   all: unset;
   border: 2px solid #9147ff;
   border-radius: 0.5rem;
@@ -94,6 +97,14 @@ select {
 
 input {
   flex: 1;
+}
+
+textarea {
+  flex: 1 1 100%;
+  height: 10rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  resize: vertical;
 }
 
 button {
@@ -118,4 +129,42 @@ button:hover {
   cursor: pointer;
   transform: translateY(-2px);
   box-shadow: 0 5px 1rem rgba(255, 248, 107, 0.2);
+}
+
+button:disabled {
+  transition: initial;
+  transform: initial;
+  box-shadow: initial;
+  cursor: not-allowed;
+  color: black;
+}
+
+#aiResponse {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  border-left: 4px solid #43e7ad;
+}
+
+#aiResponse ul {
+  padding-left: 1.5rem;
+  opacity: 0.8;
+}
+
+#aiResponse p {
+  color: white;
+}
+
+.loading {
+  animation: pulse 1s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
 }
