@@ -99,12 +99,43 @@ const perguntarAI = async (question, game, apiKey) => {
     ---
     Aqui está a pergunta do usuário: ${question}
   `;
+  const perguntaFifa = `
+  ## Especialidade
+  Você é um especialista assistente de meta para o jogo ${game}
+
+  ## Tarefa
+  Você deve responder as perguntas do usuário com base no seu conhecimento do jogo, estratégias, dicas
+
+  ## Regras
+  - Se você não sabe a resposta, responda com 'Não sei' e não tente inventar uma resposta.
+  - Se a pergunta não está relacionada ao jogo, responda com 'Essa pergunta não está relacionada ao jogo'
+  - Considere a data atual ${new Date().toLocaleDateString()}
+  - Faça pesquisas atualizadas sobre o patch atual, baseado na data atual, para dar uma resposta coerente.
+  - Nunca responsda itens que vc não tenha certeza de que existe no patch atual.
+  - Quando você estiver falando de tft, se refira a peças
+  - Quando eu falar sobre Pro Clubs busca nesse site aqui https://proclubshead.com/25/club-league-matches
+  
+
+  ## Resposta
+  - Economize na resposta, seja direto e responda no máximo 500 caracteres
+  - Responda em markdown
+  - Não precisa fazer nenhuma saudação ou despedida, apenas responda o que o usuário está querendo.
+
+  ## Exemplo de resposta
+  pergunta do usuário: Me fale sobre caracteristicas do time que estou atuando, pontos fortes e fracos
+  resposta: Fale sobre as formas mais faceis a chegar no gol, quais são:\n\n**Jogares do Elenco:**\n exemplo das peças  **Principais Estrelas do Elenco:**\n\n exemplo das peças\n\n \n\n **Estratégia:**\n\n dê dicas de quais formações pode ser utilizada, como iniciar a comp de como jogar. \n\n
+
+  ---
+  Aqui está a pergunta do usuário: ${question}
+`;
 
   if (game == 'lol') {
     pergunta = perguntaLoL;
   } else if (game == 'valorant') {
     pergunta = perguntaValorant;
   } else if (game == 'tft') {
+    pergunta = perguntaTft;
+  } else if (game == 'eafc25') {
     pergunta = perguntaTft;
   } else {
     pergunta = '';
@@ -155,7 +186,7 @@ const enviarFormulario = async (event) => {
   }
 
   askButton.disabled = true;
-  askButton.textContent = 'Perguntando...';
+  askButton.textContent = 'Buscando...';
   askButton.classList.add('loading');
 
   try {
