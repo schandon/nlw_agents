@@ -12,8 +12,11 @@ NLW Agents é um projeto que visa fornecer builds do meta, dicas de estratégia,
 *   **Itens:** Recomendações de itens ideais para cada personagem, otimizando o seu potencial.
 
 ## Como Usar
-
-O projeto está disponível no seguinte repositório GitHub: [https://github.com/schandon/nlw\_agents](https://github.com/schandon/nlw_agents)
+1. Para a utilização da aplicação, você precisa fornecer a 
+   1. Chave da API
+   2. Selecionar o jogo que o usuário quer as informações
+   3. Fazer a pergunta de fato que o usuário deseja saber
+   4. Clicando em Buscar e esperar `Buscar`
 
 ## Requisitos
 
@@ -50,14 +53,6 @@ O projeto está disponível no seguinte repositório GitHub: [https://github.com
     ````bash
     start index.html
     ````
-
-## Utilização
-1. Para a utilização da aplicação, você precisa fornecer a 
-   1. Chave da API
-   2. Selecionar o jogo que o usuário quer as informações
-   3. Fazer a pergunta de fato que o usuário deseja saber
-   4. Clicando em Buscar e esperar `Buscar`
-
 
 ## Contribuição
 
